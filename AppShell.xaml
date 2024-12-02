@@ -3,13 +3,15 @@
     x:Class="DilanHerreraApuntes.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:DilanHerreraApuntes.Views"
-    Title="DilanHerreraApuntes">
+    xmlns:views="clr-namespace:DilanHerreraApuntes.Views"
+    Title="DilanHerreraApuntes"
+    Shell.FlyoutBehavior="Disabled">
+    
 
     <TabBar>
         <ShellContent
             Title="Notes"
-            ContentTemplate="{DataTemplate views:NotePage}"
+            ContentTemplate="{DataTemplate views:AllNotesPage}"
             Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
 
         <ShellContent

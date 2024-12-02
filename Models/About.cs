@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DilanHerreraApuntes.Models
-{
+namespace DilanHerreraApuntes.Models;
+
     internal class About
     {
         public string Title => AppInfo.Name;
@@ -13,4 +13,4 @@ namespace DilanHerreraApuntes.Models
         public string MoreInfoUrl => "https://aka.ms/maui";
         public string Message => "This app is written in XAML and C# with .NET MAUI.";
     }
-}
+

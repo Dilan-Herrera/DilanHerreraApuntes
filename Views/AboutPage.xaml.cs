@@ -1,6 +1,4 @@
-using DilanHerreraApuntes.Models;
-
-namespace DilanHerreraApuntes;
+namespace DilanHerreraApuntes.Views;
 
 public partial class AboutPage : ContentPage
 {
@@ -10,6 +8,9 @@ public partial class AboutPage : ContentPage
 	}
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {
-        await Launcher.Default.OpenAsync(about.MoreInfoUrl);
+        if (BindingContext is Models.About about)
+        {
+            await Launcher.Default.OpenAsync(about.MoreInfoUrl);
+        }
     }
 }
